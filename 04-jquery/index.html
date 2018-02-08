@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Crash Course | Selector</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<style>
+		body{
+			font-family: sans-serif;
+			font-size: 17px;
+			line-height: 1.5em;
+			background:white;
+
+		}
+		header{
+			color:black;
+			background:#f4f4f4;
+			padding:20px;
+			border-bottom: 4px #000 solid;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		#container{
+			padding:10px;
+			width:90%;
+			margin:auto;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>jquery</h1>
+	</header>
+	<div id="container">
+		<h1 id="heading1">heading one</h1>
+		<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non
+		proident</span>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+
+		<h1 class="heading2">heading two</h1>
+		<p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non
+		proident</span>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+		<ul id="list">
+			<li>list Item1</li>
+			<li>list Item2</li>
+			<li>list Item3</li>
+			<li>list Item4</li>
+			<li>list Item5</li>
+			<li>list Item6</li>
+		</ul>
+		<input type="button" value="button">
+		<input type="submit" value="Submit">
+		<input type="text">
+		<a href="http://google.com">Google</a>
+		<a href="http://yahoo.com">Yaho</a>
+
+	</div>
+
+	<script>
+		//$('h1').hide();
+		//$('h1#heading1').hide();
+		//$('.heading2').hide();
+		//$('span').css('color','blue');
+		$('ul#list li:first').css('color','blue');
+		$('ul#list li:last').css('color','red');
+		$('ul#list li:even').css('background-color','green');
+		$('ul#list li:odd').css('background-color','yellow');
+		$('ul#list li:nth-child(3n)').css('list-style','none');
+		$(':button').hide();
+		$('[href]').css('color','blue');
+		$('a[href="http://google.com"]').css('color','red');  
+		//$('*').hide();
+	</script>
+
+</body>
+</html>

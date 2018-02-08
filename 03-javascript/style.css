@@ -1,0 +1,49 @@
+body{
+	background:#FFF;
+	color:black;
+	font-family: Arial,sans-serif;
+	font-size:16px;
+	line-height: 1.6em;
+	margin:0;
+}
+
+.header{
+	text-align:center;
+	background:grey;
+	color:black;
+	padding:30px;
+}
+
+.container{
+	background:#333;
+	color:white;
+	width:100%;
+    padding:10px 10px;
+	text-align:center;
+}
+button{
+	padding:10px 5px;
+	margin-top: 7px;
+}
+
+
+.form{
+	text-align: center;
+
+}
+
+.background{
+	float:left 20px;
+}
+
+#heading{
+	text-align: center;
+	color: white;
+}
+
+
+
+#submit{
+	float: right 20px;
+
+}

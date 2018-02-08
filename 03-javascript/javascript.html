@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning javascript</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body  id="body">
+	<div class="header">
+		<h1 id = "heading">Learning Javascript</h1>
+		<p>with Mehmood</p>
+	</div>
+    
+    <div class="container">
+    	<form class="form" action="somthing.php" name="myForm" method="post" onsubmit="return validateForm()">
+    		<br>
+    		<div>
+    			<label>First Name</label>
+    			<input type="Text" name="firstName" id="firstName"/>
+    	    </div>
+    	    <br>
+    	    <div>
+    			<label>Last Name</label>
+    			<input type="Text" name="lastName" id="lastName"/>
+    	    </div>
+    	    <br>
+    	    <div >
+    	    	<input type="submit" value = "submit" id="submit" >
+    	    </div>
+            <br>
+
+    	</form>
+    </div>
+
+    <script>
+    	
+    	
+    	/*var person = {
+    		firstName:'Mehmood',
+    		lastName:'Munir',
+    		age:20,
+    		children:['oho','good'],
+    		address:{
+    			city:'Peshawar',
+    			state: 'Pakistan',
+    			province: 'Punjab' 
+    		},
+    		fullName:function(){
+    			return this.firstName+" "+this.lastName;
+    		}
+    	}
+        
+        var apple = new Object();
+        apple.shape = 'circle';
+        apple.size = 4;
+        apple.color = 'red';
+        apple.describe = function(){
+        	return 'An apple is the color of'+this.color+'and shape is '+this.shape+'and size is '+this.size;
+        }
+
+    	console.log(apple.color );*/
+    	//constructtor
+    	/*function fruit(name,color,size){
+    		this.name = name;
+    		this.color = color;
+    		this.size = size;
+    		this.describe = function(){
+    			return 'A '+ this.name + ' is the color ' +this.color+' size is '+this.size;
+    		}
+    	}	
+
+    	var apple = new fruit('apple','red' , '4')           
+    	console.log(apple.describe());*/
+    	/*var user = [
+            {
+            	name : 'Mehmood',
+            	age : 20 
+            },
+            {
+            	name : 'Ahmed',
+            	age : 19
+            },
+            {
+            	name : 'Robot',
+            	age : 21
+            }        
+    	];
+    	console.log(user[0].name);*/
+    	//Events
+    	/*function doClick(){
+    		alert('You Clicked');
+    	}*/
+    	/*function changeText(id){
+    		id.innerHTML = "You Clicked";
+    	}*/
+    	/*function changeText(){
+    		var heading = document.getElementById('heading');
+    		heading.innerHTML='You Clicked!';
+    	}*/
+    	/*function showDate(){
+    		var time = document.getElementById('time');
+    		time.innerHTML = Date();
+    	}
+
+    	function clearDate(){
+    		var time = document.getElementById('time');
+    		time.innerHTML = '';
+    	}
+    	function changebackground(x){
+    		console.log(x.value);
+    		var heading = document.getElementById('heading');
+    		heading.style.color = x.value;
+
+    	}*/
+
+    	function validateForm(){
+    		var firstName=document.forms["myForm"]["firstName"].value; 
+    		if(firstName == null || firstName==""){
+    			alert("First Name is required");
+    			return false; 
+    		}
+
+    		if(firstName.length < 3 ){
+    			alert("First Name is atleast two elements");
+    			return false; 
+    		}
+    	}
+
+        
+    </script>
+</body>
+</html>

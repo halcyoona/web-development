@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Crash Cours | Dom Manipulation</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<style>
+		body{
+			font-family: sans-serif;
+			font-size: 17px;
+			line-height: 1.5em;
+			background:white;
+
+		}
+		header{
+			color:black;
+			background:#f4f4f4;
+			padding:20px;
+			border-bottom: 4px #000 solid;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		#container{
+			padding:10px;
+			width:90%;
+			margin:auto;
+
+		}
+		.myclass{
+			color:blue;
+			background:black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Jquery Crash Cours | Dom Manipulation</h1>
+	</header>
+
+	<div id="container">
+		<button id="button1">Button 1</button>
+		<p class="para1">this is a first paragraph.</p>
+		<p class="para2">this is a second paragraph</p>
+		<div id ="mydiv"></div>
+		<input type="text" id="newItem">
+		<ul id="list">
+			<li>list items 1</li>
+			<li>list items 2</li>
+			<li>list items 3</li>
+			<li>list items 4<li>
+			<li>list items 5</li>
+			<li>list items 6</li>
+		</ul>
+		<a href="http://google.com">Google</a>
+		<ul id="users"></ul>
+	</div>
+	<script>
+		/*$(document).ready(function(){
+			$('.para1').css({color:'red',background:'blue'});
+			$('.para2').addClass('myclass');
+			$('.para2').removeClass('myclass');
+			$('#btn1').click(function(){
+				$('.para2').toggleClass('myclass');
+			});
+		});
+		//$('#mydiv').text('hello world');
+		$('#mydiv').html('<h3>hello world</h3>');
+		alert($('#mydiv').text('Mehmood'));*/
+		/*$('ul').append('<li>item list Append</li>');
+		$('ul').prepend('<li>item list Append first</li>');
+		$('.para1').appendTo('.para2');
+		$('.para1').prependTo('.para2');
+		$('ul').before('<h4>Hello</h4>');
+		$('ul').after('<h4>Hello</h4>');
+		$('ul').empty();
+		$('ul').detach();*/
+		/*$('a').attr('target','_blank');
+		alert($('a').attr('href'));
+		$('a').removeAttr('target');*/
+		//$('p').wrap('<h1>');
+		//$('p').wrapAll('<h1>');
+		$('#newItem').keyup(function(e){
+			var code = e.which;
+			if(code==13){
+				e.preventDefault();
+				$('ul').append('<li>'+e.target.value+'<li>'); 
+			}
+		});
+
+		/*var myarr =['Mehmood','Abdullah','Bashir','Ahmad'];
+		$.each(myarr,function(i,val){
+			$('#users').append('<li>'+val+'</li>');
+		});*/
+
+		var newArr = $('ul#list li').toArray();
+		$.each(newArr,function(i,val){
+			console.log(val.innerHTML);
+		});
+
+
+	</script>
+
+
+
+</body>
+</html>
