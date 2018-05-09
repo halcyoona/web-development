@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cheat Sheet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+    	.navbar{
+    		margin-bottom: 0;
+    	}
+    </style>
+  </head>
+  <body>
+
+  	<nav class="navbar navbar-inverse">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Brand</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <form class="navbar-form navbar-left">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        </div>
+		        <button type="submit" class="btn btn-default">Submit</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class = "jumbotron text-center">
+			<div class = "container">
+				 <h1>Mehmood</h1>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini</p>
+				 <a href="#" class = "btn btn-primary">Read More</a>
+			</div>
+
+		</div>
+
+
+
+
+  	<div class = "container">
+    	<h1 class = "page-header">Hello, world!<small>some other text</small></h1>
+    	<p>
+    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	</p>
+    	<p><mark>Lorem ipsum dolor sit amet,</mark> consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. <del>Ut enim ad minim veniam,</del>
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat. <u>Duis aute irure dolor in reprehenderit in voluptate</u> velit esse
+    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	<hr>
+
+
+    	     <!-- Alignment -->
+
+    	<p class = "text-left" class = "text-lowercase">Left align text</p>
+    	<p class = "text-right text-uppercase">Right align text</p>
+    	<p class = "text-center text-capitalize">Center align text</p>
+    	<p class = "text-justify">justified  text</p>
+    	<p class = "text-nowrap">no wrap text</p>
+
+    	<div class = "pull-right">Div floated to right</div>
+    	<div class = "pull-left">Div floated to right</div>
+    	<div class = "pull-center">Div floated to right</div>
+    	<div class = "pull-right">Div floated to right</div>
+
+
+    	<!-- clear float-->
+
+    	<div class = "clearfix"></div>
+
+    	<hr>
+
+
+    	<!-- block quotes-->
+
+    	<blockquote class = "blockquote">
+    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    		<footer>Qoute by<cite title = "Mehmood"> Mehmood </cite></footer>
+    	</blockquote>
+
+    	<hr>
+
+    	
+    	<ul class = "list-unstyled">
+    		<li>list item 1</li>
+    		<li>list item 2</li>
+    		<li>list item 3</li>
+    		<li>list item 4</li>
+    		<li>list item 5</li>
+       	</ul>
+
+
+       	<ul class = "list-inline">
+    		<li>list item 1</li>
+    		<li>list item 2</li>
+    		<li>list item 3</li>
+    		<li>list item 4</li>
+    		<li>list item 5</li>
+       	</ul>
+
+       	<code>&lt;h1&gt;heading Text&lt;/h1&gt;</code>
+
+       	<br>
+
+       	change directory with <kbd> cd </kbd>
+
+       	<br>
+
+       	to edit setting, press <kbd><kbd>ctrl</kbd>+<kbd>,</kbd></kbd> 
+
+
+       	<hr>
+
+       	<!--contextual colors-->
+
+       	<p class ="text-primary">Hello World</p>
+       	<p class ="text-success">Hello World</p>
+       	<p class ="text-info">Hello World</p>
+       	<p class ="text-warning">Hello World</p>
+       	<p class ="text-danger">Hello World</p>
+       	<p class ="text-muted">Hello World</p>
+
+       	<p class ="bg-primary">Hello World</p>
+       	<p class ="bg-success">Hello World</p>
+       	<p class ="bg-info">Hello World</p>
+       	<p class ="bg-warning">Hello World</p>
+       	<p class ="bg-danger">Hello World</p>
+       	<p class ="bg-muted">Hello World</p>
+
+       	<div class = "container">
+       		
+       		<!--button-->
+
+       		<button class ="btn btn-default">Button</button>
+       		<a class ="btn btn-default" role="button">Link</a>
+       		<input type="submit" class =" btn btn-default" value="Submit">
+
+
+       		<!-- contextual color-->
+
+       		<button class ="btn btn-default">Default</button>
+       		<button class ="btn btn-primary">Primary</button>
+       		<button class ="btn btn-info">Info</button>
+       		<button class ="btn btn-success">Success</button>
+       		<button class ="btn btn-warning">Warning</button>
+       		<button class ="btn btn-delete">Delete</button>
+       		<button class ="btn btn-link">Link</button>
+
+
+       		<!--Button sizing-->
+
+       		<button class ="btn btn-default btn-lg">Button</button>
+       		<button class ="btn btn-default">Button</button>
+       		<button class ="btn btn-default btn-sm">Button</button>
+       		<button class ="btn btn-default btn-xs " disabled="disabled">Button</button>
+
+       		<br>
+
+
+       		<!-- Forms-->
+       	</div>
+
+       	<div class = "container">
+
+       		<form>
+       			<div class = "form-group">
+       				
+       				<label>Name</label>
+       				<input type="text" class ="form-control" placeholder="Add Name">
+
+
+       			</div>
+
+       			<div class = "form-group">
+       				
+       				<label>Email</label>
+       				<input type="email" class ="form-control" placeholder="Add Email">
+
+
+       			</div>
+
+       			<div class = "form-group">
+       				
+       				<label>Message</label>
+       				<textarea class ="form-control" placeholder="Add Message"></textarea>  
+
+
+       			</div>
+
+
+
+       			<div class = "form-group">
+       				
+       				<label>Gender</label>
+       				<select class="form-control">
+       					<option value="male">Male</option>
+       					<option value="female">Female</option>
+       					<option value="other">other</option>
+
+       				</select>
+
+
+       			</div>
+
+       			<div class = "form-group">
+       				
+       				<label>Upload File</label>
+       				<input type="file">
+       				<p class="help-block">Only png and jpg allowed</p>
+
+
+       			</div>
+
+
+       			<div class = "form-group">
+       				
+       				<label><input type="checkbox">Check me out</label>
+       				
+
+       			</div>
+
+       			<div>
+       				
+       				<button type="submit" class ="btn btn-default">Submit</button>
+
+       			</div>
+
+
+
+       		</form>
+
+
+       		<form class = "form-inline">
+       			<div class = "form-group">
+       				
+       				<label>Name</label>
+       				<input type="text" class ="form-control" placeholder="Add Name">
+
+
+       			</div>
+
+       			<div class = "form-group">
+       				
+       				<label>Email</label>
+       				<input type="email" class ="form-control" placeholder="Add Email">
+
+
+       			</div>
+
+
+
+       			<div class = "checkbox">
+       				
+       				<label><input type="checkbox">Check me out</label>
+       				
+
+       			</div>
+
+       			
+       				
+       			<button type="submit" class ="btn btn-default">login</button>
+
+
+
+       		</form>
+
+       	</div>
+       	<hr>
+       	<!--Tables-->
+
+       	<div class="container">
+       		
+       		<table class = "table table-striped table-bordered table-hover table-condensed">
+
+       			<thead>
+                	<tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                	</tr>
+            	</thead>
+            	<tbody>
+                	<tr>
+                    <td>Mehmood</td>
+                    <td>BSCS</td>
+                    <td>B</td>
+                	</tr>
+                	<tr>
+                    <td>Abdullah</td>
+                    <td>BSCS</td>
+                    <td>C</td>
+                	</tr>
+                	<tr>
+                    <td>Bashir</td>
+                    <td>BSCS</td>
+                    <td>B</td>
+                	</tr>
+            	</tbody>
+       			
+
+
+       		</table>
+
+       	</div>
+
+       	<hr>
+
+       	<div class = "container">
+       		
+       		<ul class = "list-group">
+       			
+       			<li class= "list-group-item">list item 1</li>
+       			<li class= "list-group-item">list item 2</li>
+       			<li class= "list-group-item">list item 3</li>
+       			<li class= "list-group-item">list item 4</li>
+       			<li class= "list-group-item">list item 5</li>
+
+       		</ul>
+
+       		<div class = "list-group">
+		   		
+		   		<a href = "#" class ="list-group-item">list item 1</a>
+		   		<a href = "#" class ="list-group-item">list item 2</a>
+		   		<a href = "#" class ="list-group-item">list item 3</a>
+
+		   		<a href = "#" class ="list-group-item">list item 4</a>
+		   		<a href = "#" class ="list-group-item">list item 5</a>
+
+		   	</div>
+
+       	</div>
+
+
+       	<!---->
+
+		<div class = "container">
+			
+			<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Panel title</h3>
+			  	</div>
+			  	<div class="panel-body">
+			    	Panel content
+				</div>
+
+				<div class ="panel-footer">panel Footer</div>
+
+			</div>
+
+
+			<div class ="well">Hello world</div>
+			<div class ="well well-lg">Hello world</div>
+			<div class ="well well-sm">Hello world</div>
+			<div class ="well well-xs">Hello world</div>
+
+
+			<hr>
+
+
+			<!---Alerts-->
+
+
+			<div class = "alert alert-success" role ="alert">A Success Alert</div>
+			<div class = "alert alert-info" role ="alert">A Info Alert</div>
+			<div class = "alert alert-warning" role ="alert">A warning Alert</div>
+			<div class = "alert alert-danger" role ="alert">A Danger Alert </div>
+
+			<div class = "alert alert-warning alert-dismissible" role ="alert">
+				<button type="button" class = "close" data-dismiss="alert"><span>&times;</span></button>
+				you can close this file
+			</div>
+
+			<!--Progress bar-->
+
+			<div class = "progress">
+				
+				<div class = "progress-bar progress-bar-success progress-bar-striped" style = "width:50%;">50%</div>
+
+
+			</div>
+
+
+			<!--label-->
+
+
+
+			<span class ="label label-default">Default</span>
+			<h1>Hello<span class ="label label-primary">Primary</span></h1>
+			<span class ="label label-success">Success</span>
+			<span class ="label label-info">Info</span>
+			<span class ="label label-warning">Warning</span>
+			<span class ="label label-danger">Danger</span>
+
+
+			<!-- badges-->
+
+			<a href="#">Inbox <span class = "badge">50</span></a>
+
+			<button class ="btn btn-primary " type = "button">Message<span class ="badge">2</span></button>
+
+
+
+
+
+
+		</div>
+
+		<div class = "container">
+			<!--images-
+			<img class = "thumbnail" src = "IMG_0498.JPG">
+			<img class = "img-rounded" src="IMG_0172.JPG">
+			<img class = "img-circle" src="IMG_0499.JPG">
+			-->	
+
+			<!--grid System -->
+
+			<div class ="row">
+				<div class = "col-md-8 col-ms-8 col-xs-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				</div>
+				<div class = "col-md-4 col-ms-4 col-xs-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+				</div>
+				
+			</div>
+
+			<div class ="row">
+				<div class = "col-md-3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class = "col-md-3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					empor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				
+				<div class = "col-md-3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class = "col-md-3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					empor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+       	<div style = " padding-bottom: 1000px"></div>	
+
+    	</div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+		
