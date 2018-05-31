@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background:#f4f4f4;
+			font-family:Arial,helvetica,sans-serif;
+			font-size:16px;
+			font-weight:normal;
+			line-height:1.6em;
+			margin:2px; 
+			}
+		.container
+		{
+			text-align: center;
+			width: 35%;
+			padding: 20px;
+			/*padding-left:60px;*/
+			margin: auto;
+			background-color: white;
+		}
+		tr label
+		{
+			float: left;
+			clear: left;
+		}
+		tr input, tr select
+		{
+			float: left;
+			clear: left;
+		}
+		h1
+		{
+			position: relative;
+			top:0px;
+
+		}
+	
+	</style>
+	<title>Sign Up</title>
+</head>
+<body>
+	<div class= "container">
+		<fieldset>
+		<h1>VU Sign Up Form</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<form class = "forms" name = "myform" action="action.php" method="POST" >
+			<table>
+				<tr>
+					<td>
+						<label>Name:</label>
+					</td>
+					<td>
+						<input type="text" name="Name" value="Bilal baig" id="name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Father Name:</label>
+					</td>
+					<td>
+						<input type="text" name="FatherName" value="Bilal's Father" id="fatherName">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Gende:</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Male:</label>
+					</td>
+					<td>
+						<input type="radio" name="gender" value="Male" checked>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Female:</label>
+					</td>
+					<td>
+						<input type="radio" name="gender" value="Female">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Date of Birth:</label>
+					</td>
+					<td>
+						<input type="date" name="birthday" value="1996-07-03" id="dofb">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Study Program:</label>
+					</td>
+					<td>
+						<select name="program" id ="sel" onchange="showMessage()">
+		                    <option value="BS">BS</option>
+		                    <option value="MS">MS</option>
+		                    <option value="MCS">MCS</option>
+		                    <option value="MIT">MIT</option>
+		                    <option value="PHD">PHD</option>
+	                	</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Comments:</label>
+					</td>
+					<td>
+						<textarea name="message" rows="12" cols="25" placeholder="Describe your self in few words i.e 20 to 30 words" id="comment"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Email:</label>
+					</td>
+					<td>
+						<input type="email" name="email" value="bilalcharasala@gmail.com" id="email">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Password:</label>
+					</td>
+					<td>
+						<input type="password" name="pasword" id="pas">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Confirm Password:</label>
+					</td>
+					<td>
+						<input type="password" name="cpasword" id="cpas">
+					</td>
+				</tr>
+			</table>
+		</form>
+		<br>
+		<br>
+		<input type="button" name="signup" value="Sign Up" onclick="checkForm()">
+        <input type="button" name="reset" value="Reset" >
+		</fieldset>
+	</div>
+	<script type="text/javascript">
+		function checkForm()
+		{
+    		var pasword=document.getElementById("pas").value;
+    		var cpasword=document.getElementById("cpas").value;
+    		var name=document.getElementById('name').value;
+    		var fatherName = document.getElementById('fatherName').value;
+    		var email = document.getElementById('email').value;
+    		var comment = document.getElementById('comment').value;
+    		var dob = document.getElementById('dofb').value;
+    		if(cpasword != pasword ){
+    			alert("no match of the pasword");
+    			return false; 
+    		}
+    		else
+    		{
+    			if(name==null || name == "")
+    			{
+    				alert("Name is required");
+    				return false;
+    			}
+    			else if(fatherName==null || fatherName == "")
+    			{
+    				alert("Father's Name is required");
+    				return false;
+    			}
+    			else if(email==null || email == "")
+    			{
+    				alert("email is required");
+    				return false;
+    			}
+    			else if(comment==null || comment == "")
+    			{
+    				alert("Comments is required");
+    				return false;
+    			}	
+    			else if(dob==null || dob == "")
+    			{
+    				alert("Date of Birth is required");
+    				return false;
+    			}
+    			else if(pasword==null || pasword == "")
+    			{
+    				alert("pasword is required");
+    				return false;
+    			}
+    			else if(cpasword==null || cpasword == "")
+    			{
+    				alert("Confirm Password is required");
+    				return false;
+    			}
+    			else
+    			{
+    				alert("You have successfully registered");
+    				return true;
+    			}
+    		}
+    	}
+
+    	function showMessage()
+    	{
+    		var select= document.getElementById("sel").value;
+    		alert("Your study program is changed");
+    	}
+	</script>
+</body>
+</html>
